@@ -7,7 +7,7 @@ if(txtval == 0){
 	alert('Please Enter items first');
 }else{
 var list = $(".list");
-list.prepend('<p class = "items" style="display:block">' + txtval + '<button class ="delete"></button></p>');//FadeIn doesn't work.
+list.append('<p class = "items" style="display:block">' + txtval + '<button class ="delete"></button></p>');//FadeIn doesn't work.
  $('#input').val('');
 }
  });
@@ -17,7 +17,7 @@ $("#input").keypress(function(event){
    if(event.keyCode == 13){
  var txtval = $('#input').val();
  var list = $(".list");
-list.prepend('<p class = "items" style="display:block">' + txtval + '<button class ="delete"></button></p>');//FadeIn doesn't work.
+list.append('<p class = "items" style="display:block">' + txtval + '<button class ="delete"></button></p>');//FadeIn doesn't work.
  $('#input').val('');
  
 	}
