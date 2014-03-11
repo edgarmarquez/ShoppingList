@@ -48,7 +48,6 @@ header{background: #8fc800;
 	text-align:center;
 }
 
-
 button {
 	margin:0 auto;
 	width:80px;
@@ -59,7 +58,6 @@ button {
 	position:relative;
 	bottom:30px;
 }
-
 
 .list {
 	width:100%;
@@ -86,7 +84,7 @@ button {
 	background-color:transparent;
 	background-image: url('List Icons/aspa.png');    
     background-repeat:no-repeat;
-    float:right;
+    position:absolute;
     top:0;
     right:5px;
 }

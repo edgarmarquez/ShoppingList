@@ -15,8 +15,8 @@ list.prepend('<p class = "items" style="display:block">' + txtval + '<button cla
 //entering items to list using "Enter"
 $("#input").keypress(function(event){
    if(event.keyCode == 13){
-   	var txtval = $('#input').val();
-   	var list = $(".list");
+ var txtval = $('#input').val();
+ var list = $(".list");
 list.prepend('<p class = "items" style="display:block">' + txtval + '<button class ="delete"></button></p>');//FadeIn doesn't work.
  $('#input').val('');
  
