@@ -4,7 +4,7 @@ $(document).ready(function(){
 $("button").on('click', function(){
 var txtval = $('#input').val();
 if(txtval == 0){
-	alert('Please Enter items first');
+	alert('Please Enter items');
 }else{
 var list = $(".list");
 var html = $('<p class = "items" style="display:block">' + txtval + '<button class ="delete"></button></p>');
@@ -19,6 +19,9 @@ $("#input").keypress(function(event){
  var txtval = $('#input').val();
  var list = $(".list");
  var html = $('<p class = "items" style="display:block">' + txtval + '<button class ="delete"></button></p>');
+}if(txtval == 0){
+ alert('Please Enter items')
+}else{
 list.prepend(html.fadeIn(2000));
  $('#input').val('');
  
